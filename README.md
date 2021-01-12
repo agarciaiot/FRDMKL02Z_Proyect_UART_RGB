@@ -1,6 +1,6 @@
 # FRDMKL02Z_Proyect_UART_RGB (Proyecto Modulo 04 Semana 02)
 
-_Control de Estado del LED RGB de la FREESCALE FRDM-KL02Z mediante caracteres ASCII ingresados a través del puerto Serial (UART0) e impresos en Terminal Serial.
+_Control de Estado del LED RGB de la FREESCALE FRDM-KL02Z mediante caracteres ASCII ingresados a través del puerto Serial (UART0) e impresos en Terminal Serial._
 
 ## Comenzando:
 
@@ -8,21 +8,21 @@ _Control de Estado del LED RGB de la FREESCALE FRDM-KL02Z mediante caracteres AS
 
 #### Windows:
 
-_Tener instalado el programa MCUXpresso IDE para depuración y programación, el cual puede ser descargado en la página oficial de NXP, enlace: 
+_ _
 
 ### Instalación:
 
-_
+_ _
 
 ## Ejecución de Pruebas:
 
-_
+_ _
 
 ###
 
 ## Construido con:
 
-_Para la ejecución y desarrollo de este proyecto se utilizaron las siguientes herramientas:
+_Para la ejecución y desarrollo de este proyecto se utilizaron las siguientes herramientas:_
 
 * [MCUXpresso IDE v11.2.1 [Build 4149] [2020-10-07]](https://www.nxp.com/design/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE) - IDE (Integrated Development Environment) usado
 * [SourceTree 3.4.1 [31 December 2020]](https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.4.1.exe) - Git GUI (Git Graphical User Interface) usado para la control de versiones
