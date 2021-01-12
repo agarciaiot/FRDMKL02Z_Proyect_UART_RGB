@@ -41,7 +41,8 @@
 #include "fsl_debug_console.h"
 
 /* TODO: insert other include files here. */
-#include "SDK_01/sdk_uart0.h"
+#include "sdk_uart0.h"
+
 /* TODO: insert other definitions and declarations here. */
 
 /*
