@@ -1,6 +1,6 @@
 # FRDMKL02Z_Proyect_UART_RGB (Proyecto Modulo 04 Semana 02)
 
-_Control de Estado del LED RGB de la FREESCALE FRDM-KL02Z mediante caracteres ASCII ingresados a través del puerto Serial (UART0) e impresos en Terminal Serial._
+_Control de Estado del LED RGB de la FREESCALE FRDM-KL02Z mediante caracteres ingresados a través del puerto Serial (UART0) e impresos en Terminal Serial._
 
 ## Comenzando:
 
