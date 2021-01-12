@@ -36,7 +36,7 @@
  * Private vars                                                                  *
  *******************************************************************************/
 
-uint8_t UART0_Circular_Buffer[Length_Circular_Buffer_B];
+uint8_t UART0_Circular_Buffer[LENGTH_CIRCULAR_BUFFER_B];
 volatile uint16_t Tx_Index; /*Index para Dato a Enviar*/
 volatile uint16_t Rx_Index; /*Index de la memoria para nuevo Dato Recibido*/
 
@@ -53,11 +53,11 @@ void UART0_IRQ_FUNCTION(void)
     {
         data = LPSCI_ReadByte(UART0);
 
-        if (((Rx_Index + 1) % Length_Circular_Buffer_B) != Tx_Index)
+        if (((Rx_Index + 1) % LENGTH_CIRCULAR_BUFFER_B) != Tx_Index)
         {
         	UART0_Circular_Buffer[Rx_Index] = data;
             Rx_Index++;
-            Rx_Index %= Length_Circular_Buffer_B;
+            Rx_Index %= LENGTH_CIRCULAR_BUFFER_B;
         }
     }
 }
@@ -104,7 +104,7 @@ status_t UART0_ReadByteCircularBuffer(uint8_t *new_byte) {
 	if (Rx_Index != Tx_Index) {
 		*new_byte = UART0_Circular_Buffer[Tx_Index];
 		Tx_Index++;
-		Tx_Index %= Length_Circular_Buffer_B;
+		Tx_Index %= LENGTH_CIRCULAR_BUFFER_B;
 		return (kStatus_Success);
 	} else {
 		return (kStatus_Fail);

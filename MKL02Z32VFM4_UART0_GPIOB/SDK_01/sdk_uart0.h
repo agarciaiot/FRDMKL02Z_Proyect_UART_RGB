@@ -26,7 +26,7 @@
  *******************************************************************************/
 
 /*@brief Longitud del Buffer Circular en bytes para recepción de datos por UART0*/
-#define Length_Circular_Buffer_B 64 /*B = bytes*********************************/
+#define LENGTH_CIRCULAR_BUFFER_B 64 /*B = bytes*********************************/
 
 /*******************************************************************************
  * External vars                                                               *
