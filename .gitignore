@@ -7,11 +7,11 @@
 /SDK_2.3.1_FRDM-KL02Z.zip
 
 # Exclude: Debug and Release temporal folders
-/FRDMKL02Z_Project_UART/Debug/
-/FRDMKL02Z_Project_UART/Release/
+/MKL02Z32VFM4_UART0_GPIOB/Debug/
+/MKL02Z32VFM4_UART0_GPIOB/Release/
 
 # Exclude: doxygen html folder
-/FRDMKL02Z_Project_UART/doxygen/html/
+/MKL02Z32VFM4_UART0_GPIOB/doxygen/html/
 
 # Exclude: FreeRTOS_TAD_logs folder
 /FreeRTOS_TAD_logs/

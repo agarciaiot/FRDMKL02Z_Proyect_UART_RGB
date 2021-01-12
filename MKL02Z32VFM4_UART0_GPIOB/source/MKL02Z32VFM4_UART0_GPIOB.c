@@ -39,8 +39,9 @@
 #include "clock_config.h"
 #include "MKL02Z4.h"
 #include "fsl_debug_console.h"
-/* TODO: insert other include files here. */
 
+/* TODO: insert other include files here. */
+#include "SDK_01/sdk_uart0.h"
 /* TODO: insert other definitions and declarations here. */
 
 /*
@@ -57,16 +58,17 @@ int main(void) {
     BOARD_InitDebugConsole();
 #endif
 
-    PRINTF("Hello World\n");
-
-    /* Force the counter to be placed into memory. */
-    volatile static int i = 0 ;
-    /* Enter an infinite loop, just incrementing a counter. */
+    (void)UART0_SetUp(115200);
+//    PRINTF("Hello World\n");
     while(1) {
-        i++ ;
-        /* 'Dummy' NOP to allow source level single stepping of
-            tight while() loop */
-        __asm volatile ("nop");
+    	status_t status;
+    	uint8_t new_byte;
+    	if (UART0_NewDataOnBuffer()>0){
+    		status = UART0_ReadByteCircularBuffer(&new_byte);
+    		if (status == kStatus_Success){
+    			printf("%c\r\n", new_byte);
+    		}
+    	}
     }
     return 0 ;
 }
