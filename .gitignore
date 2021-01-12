@@ -15,3 +15,6 @@
 
 # Exclude: FreeRTOS_TAD_logs folder
 /FreeRTOS_TAD_logs/
+
+#Exclude: Others
+*Notes.txt
