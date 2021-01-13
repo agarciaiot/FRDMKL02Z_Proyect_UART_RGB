@@ -42,6 +42,7 @@
 
 /* TODO: insert other include files here. */
 #include "sdk_uart0.h"
+#include "sdk_gpiob.h"
 
 /* TODO: insert other definitions and declarations here. */
 
@@ -51,7 +52,7 @@
 int main(void) {
 
   	/* Init board hardware. */
-    BOARD_InitBootPins();
+	BOARD_InitBootPins();
     BOARD_InitBootClocks();
     BOARD_InitBootPeripherals();
 #ifndef BOARD_INIT_DEBUG_CONSOLE_PERIPHERAL
@@ -59,17 +60,28 @@ int main(void) {
     BOARD_InitDebugConsole();
 #endif
 
+    /* Init UART0 to Set Baudrate. */
     (void)UART0_SetUp(115200);
-//    PRINTF("Hello World\n");
+
     while(1) {
     	status_t status;
+    	status_t ptb_gpio_pin;
     	uint8_t new_byte;
+    	uint8_t id_pin[] = {6U, 7U, 10U};
+    	uint8_t i;
     	if (UART0_NewDataOnBuffer()>0){
     		status = UART0_ReadByteCircularBuffer(&new_byte);
+    		ptb_gpio_pin = GPIOB_SetPortState(&new_byte);
     		if (status == kStatus_Success){
-    			printf("%c\r\n", new_byte);
+    			printf("Dato: %c\r\n", new_byte);
+     		}
+    		for (i = 0; i <= 3; i++){
+    			if (ptb_gpio_pin == id_pin[i]){
+    	        	GPIOB_SetUp(); /*Init GIPOB to conditional Set Pin.*/
+    	        	GPIOB_SetOrClearLed(&new_byte); /*Set RGB Pin to Conditional Character*/
+    			}
     		}
     	}
     }
-    return 0 ;
+    return 0;
 }
