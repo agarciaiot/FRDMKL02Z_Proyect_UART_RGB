@@ -70,22 +70,22 @@ void UART0_IRQ_FUNCTION(void)
  * */
 status_t UART0_SetUp(uint32_t baud_rate) {
 	lpsci_config_t config;
-	status_t status;
+	status_t status_uart;
 
 	LPSCI_GetDefaultConfig(&config);
 	config.baudRate_Bps = baud_rate;
 	config.enableTx = true;
 	config.enableRx = true;
 
-	status=LPSCI_Init(UART0, &config, CLOCK_GetFreq(kCLOCK_McgFllClk));
+	status_uart = LPSCI_Init(UART0, &config, CLOCK_GetFreq(kCLOCK_McgFllClk));
 
-	if (status != kStatus_Success)
-		return (status);
+	if (status_uart != kStatus_Success)
+		return (status_uart);
 
 	LPSCI_EnableInterrupts(UART0, kLPSCI_RxDataRegFullInterruptEnable);
-	status=EnableIRQ(UART0_IRQ_INDEX);
+	status_uart = EnableIRQ(UART0_IRQ_INDEX);
 
-	return(status);
+	return(status_uart);
 }
 
 /*@brief Calculo del número de Datos Nuevos que existen en el Buffer Circular
