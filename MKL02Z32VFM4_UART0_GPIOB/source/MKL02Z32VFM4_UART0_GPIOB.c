@@ -65,18 +65,18 @@ int main(void) {
 
     while(1) {
     	status_t status;
-    	status_t ptb_gpio_pin;
+    	uint8_t ptb_gpio_pin;
     	uint8_t new_byte;
-    	uint8_t id_pin[] = {6U, 7U, 10U};
-    	uint8_t i;
+    	uint8_t board_led_gpio_map[] = {6U, 7U, 10U};
+    	uint8_t i = 0;
     	if (UART0_NewDataOnBuffer()>0){
     		status = UART0_ReadByteCircularBuffer(&new_byte);
-    		ptb_gpio_pin = GPIOB_SetPortState(&new_byte);
+    		ptb_gpio_pin = GPIOB_SetPortState(&new_byte, &board_led_gpio_map);
     		if (status == kStatus_Success){
     			printf("Dato: %c\r\n", new_byte);
      		}
     		for (i = 0; i <= 3; i++){
-    			if (ptb_gpio_pin == id_pin[i]){
+    			if (ptb_gpio_pin == board_led_gpio_map[i]){
     	        	GPIOB_SetUp(); /*Init GIPOB to conditional Set Pin.*/
     	        	GPIOB_SetOrClearLed(&new_byte); /*Set RGB Pin to Conditional Character*/
     			}

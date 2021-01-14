@@ -37,16 +37,19 @@
  * Public Prototypes                                                           *
  *******************************************************************************/
 
-/*@brief Asignación de Pin Led para funciones posteriores
- * */
-uint8_t GPIOB_SetPortState(uint8_t *new_byte);
+/*
+ * @brief Asignación de Pin Led para funciones posteriores
+ */
+uint8_t GPIOB_SetPortState(uint8_t *new_byte, uint8_t *board_led_gpio_map);
 
-/*@brief Define la estructura inicial de dirección del pin LED
- * */
+/*
+ * @brief Inicializa el Port B y Define la Estructura Inicial de Dirección para pin LED
+ */
 void GPIOB_SetUp(/*uint8_t *ptb_gpio_pin*/);
 
-/*@brief  Control de Estado del pin LED condicionado a caracter ingresado por teclado
- * */
+/*
+ * @brief  Control de Estado del pin LED condicionado a caracter ingresado por teclado
+ */
 status_t GPIOB_SetOrClearLed(uint8_t *new_byte);
 
 
