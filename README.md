@@ -4,6 +4,24 @@
 
 _Control de Estado del LED RGB (GPIOB) de la FREESCALE FRDM-KL02Z mediante caracteres ingresados a través del puerto Serial (UART0) e impresos en Terminal Serial_
 
+## Dinámica:
+
+_El ingreso por teclado de los caracteres evidenciará para:_
+
+* ‘R’, impresión por puerto serial del mensaje “Dato: R”, activación del Led RGB en Red (Rojo)
+
+* ‘r’, impresión por puerto serial del mensaje “Dato: r”, desactivación del Led RGB en Red (Rojo)
+
+* ‘G’, impresión por puerto serial del mensaje “Dato: G”, activación del Led RGB en Green (Verde)
+
+* ‘g’, impresión por puerto serial del mensaje “Dato: g”, desactivación del Led RGB en Green (Verde)
+
+* ‘B’, impresión por puerto serial del mensaje “Dato: B”, activación del Led RGB en Blue (Azul)
+
+* ‘b, impresión por puerto serial del mensaje “Dato: b”, desactivación del Led RGB en Blue (Azul)
+
+* >Otros caracteres<, impresión por puerto serial del mensaje “Dato: >Otros caracteres<”, Led RGB sin cambios
+
 ## Construido en:
 
 _Para la programación y pruebas se usó la plataforma:_
@@ -37,7 +55,7 @@ _Las que están incluidas en el repositorio y las librerías internas de la pla
 
 _Para descargar del respositorio en archivo *.rar se recomienda seguir los pasos siguientes para prevenir errores:_
 
-* Descomprimir el archivo *.rar en una ubicación conocida y copiar la ruta de acceso al espacio de trabajo (por simplicidad se recomienda la ruta del sistema: C:\FRDMKL02Z_Proyect_UART_RGB-main)
+* Descomprimir el archivo *.rar en una ubicación conocida y copiar la ruta de acceso al espacio de trabajo (por simplicidad se recomienda la ruta del sistema: C:\"nombre carpeta repositorio en disco")
 
 * Iniciar el Programa **MCUXpresso IDE** y en el lanzador de espacio de trabajo _(Workspace)_ asignar la ruta anterior, si ya posee una ruta de espacio de trabajo por defecto iniciar el programa en esa ruta y en la barra de menús ir a _File > Switch Workspace > Other_ digitar la ruta asignada lanzar en _Launch_, el programa se reiniciará y se lanzará en la ruta asignada como Workspace
 
