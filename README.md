@@ -20,7 +20,7 @@ _El ingreso por teclado de los caracteres evidenciará para:_
 
 * ‘b, impresión por puerto serial del mensaje “Dato: b”, desactivación del Led RGB en Blue (Azul)
 
-* >Otros caracteres<, impresión por puerto serial del mensaje “Dato: >Otros caracteres<”, Led RGB sin cambios
+* 'Otros caracteres', impresión por puerto serial del mensaje “Dato: Otros caracteres”, Led RGB sin cambios
 
 ## Construido en:
 
