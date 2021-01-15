@@ -27,7 +27,7 @@ _Las que están incluidas en el repositorio y las librerías internas de la pla
 
 ## Pre-requisitos:
 
-* Instalación previa del programa [MCUXpresso IDE de NXP] en la versión referenciada
+* Instalación previa del programa **MCUXpresso IDE de NXP** en la versión referenciada
 
 * Consultar de la documentación de desarrollo y gestión sobre el programa ([MCUXpresso Integrated Development Environment (IDE)](https://www.nxp.com/design/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE?&tab=Documentation_Tab&linkline=Users-Guide))
 
@@ -39,7 +39,7 @@ _Para descargar del respositorio en archivo *.rar se recomienda seguir los pasos
 
 * Descomprimir el archivo *.rar en una ubicación conocida y copiar la ruta de acceso al espacio de trabajo (por simplicidad se recomienda la ruta del sistema: C:\FRDMKL02Z_Proyect_UART_RGB-main)
 
-* Iniciar el Programa [MCUXpresso IDE] y en el lanzador de espacio de trabajo _(Workspace)_ asignar la ruta anterior, si ya posee una ruta de espacio de trabajo por defecto iniciar el programa en esa ruta y en la barra de menús ir a _File > Switch Workspace > Other_ digitar la ruta asignada lanzar en _Launch_, el programa se reiniciará y se lanzará en la ruta asignada como Workspace
+* Iniciar el Programa **MCUXpresso IDE** y en el lanzador de espacio de trabajo _(Workspace)_ asignar la ruta anterior, si ya posee una ruta de espacio de trabajo por defecto iniciar el programa en esa ruta y en la barra de menús ir a _File > Switch Workspace > Other_ digitar la ruta asignada lanzar en _Launch_, el programa se reiniciará y se lanzará en la ruta asignada como Workspace
 
 * Para importar el proyecto en la barra de menús ir a _File > Import_ en la ventana _Import_ seleccionar el desplegable _General > Existing Projects into Workspace_ en _Browse..._ seleccionar la carpeta del proyecto (MKL02Z32VFM4_UART0_GPIOB), aparecerá en la lista en el cuadro Projects: seleccionaro y luego dar en _Finish_, se iniciará la carga de los archivos y sdk necesarios para la ejecución
 
