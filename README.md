@@ -4,7 +4,7 @@
 
 _Control de Estado del LED RGB (GPIOB) de la FREESCALE FRDM-KL02Z mediante caracteres ingresados a través del puerto Serial (UART0) e impresos en Terminal Serial_
 
-## Dinámica:
+### Dinámica:
 
 _El ingreso por teclado de los caracteres evidenciará para:_
 
@@ -22,13 +22,15 @@ _El ingreso por teclado de los caracteres evidenciará para:_
 
 * 'Otros caracteres', impresión por puerto serial del mensaje “Dato: Otros caracteres”, Led RGB sin cambios
 
-## Construido en:
+## Construcción:
+
+### Plataforma:
 
 _Para la programación y pruebas se usó la plataforma:_
 
 * [FRDM-KL02Z: Freedom Development Platform for the Kinetis® KL02 Family](https://www.nxp.com/design/development-boards/freedom-development-boards/mcu-boards/freedom-development-platform-for-the-kinetis-kl02-family:FRDM-KL02Z) - MCU Board (KL02Z) | Utra-Low-Power
 
-## Construido con:
+### Software:
 
 _Para la ejecución y desarrollo de este proyecto se utilizaron las siguientes herramientas:_
 
@@ -41,7 +43,7 @@ _Otras herramientas tipo Serial Terminal GUI para pruebas externas al IDE_
 
 ## Librerías utilizadas/requeridas:
 
-_Las que están incluidas en el repositorio y las librerías internas de la placa de desarrollo_
+_Las que están incluidas en el repositorio y las librerías internas de la placa de desarrollo_
 
 ## Pre-requisitos:
 
@@ -55,11 +57,11 @@ _Las que están incluidas en el repositorio y las librerías internas de la pla
 
 _Para descargar del respositorio en archivo *.rar se recomienda seguir los pasos siguientes para prevenir errores:_
 
-* Descomprimir el archivo *.rar en una ubicación conocida y copiar la ruta de acceso al espacio de trabajo (por simplicidad se recomienda la ruta del sistema: C:\"nombre carpeta repositorio en disco")
+* Descomprimir el archivo *.rar en una ubicación conocida y copiar la ruta de acceso al espacio de trabajo (por simplicidad se recomienda la ruta del sistema: C:'\'"nombre carpeta repositorio en disco"'\')
 
 * Iniciar el Programa **MCUXpresso IDE** y en el lanzador de espacio de trabajo _(Workspace)_ asignar la ruta anterior, si ya posee una ruta de espacio de trabajo por defecto iniciar el programa en esa ruta y en la barra de menús ir a _File > Switch Workspace > Other_ digitar la ruta asignada lanzar en _Launch_, el programa se reiniciará y se lanzará en la ruta asignada como Workspace
 
-* Para importar el proyecto en la barra de menús ir a _File > Import_ en la ventana _Import_ seleccionar el desplegable _General > Existing Projects into Workspace_ en _Browse..._ seleccionar la carpeta del proyecto (MKL02Z32VFM4_UART0_GPIOB), aparecerá en la lista en el cuadro Projects: seleccionaro y luego dar en _Finish_, se iniciará la carga de los archivos y sdk necesarios para la ejecución
+* Para importar el proyecto en la barra de menús ir a _File > Import_ en la ventana _Import_ seleccionar el desplegable _General > Existing Projects into Workspace_ en _Browse..._ seleccionar la carpeta del proyecto (MKL02Z32VFM4_UART0_GPIOB), aparecerá en la lista en el cuadro Projects: seleccionarlo y luego aplicar en _Finish_, se iniciará la carga de los archivos y sdk necesarios para la ejecución
 
 * Una vez cargado el proyecto presione _Ctrl+B_ para iniciar la primera depuración y comprobar que no existan errores.
 
@@ -67,10 +69,11 @@ _Para descargar del respositorio en archivo *.rar se recomienda seguir los pasos
 
 _Se ejecutaron pruebas de envío/recepción de datos sobre los terminales Seriales:_
 
-* Docklight v2.3.26
-* QCOM v1.6
+* MCUXpresso IDE v11.2.1 : [Prueba 3](https://youtu.be/bVmbKxVhHnM)
+* Docklight v2.3.26 : [Prueba 1](https://youtu.be/1lvIfqMq1qI) [Prueba 2](https://youtu.be/WqFARkfWEKw)
+* QCOM v1.6 : [Prueba 4](https://youtu.be/M6Pcw2XFyzI)
 
-## Autores:
+## Autores y Colaboradores:
 
 * **Álvaro García** - *Trabajo Inicial* - [agarciaiot](https://github.com/agarciaiot)
 * **Ernesto Rincón** - *Documentación y Asesoría* - [ErnestoARC](https://github.com/ErnestoARC)
