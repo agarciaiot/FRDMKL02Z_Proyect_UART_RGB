@@ -2,7 +2,7 @@
 
 ## Descripción:
 
-_Control de Estado del LED RGB (GPIOB) de la FREESCALE FRDM-KL02Z mediante caracteres ingresados a través del puerto Serial (UART0) e impresos en Terminal Serial_
+_Control de Estado del LED RGB (GPIOB) de la FREESCALE FRDM-KL02Z mediante caracteres ingresados a través del puerto Serial (UART0) e impresos en Terminal Serial, esta es una implementación de prueba para el Módulo 4 del Diplomado de IoT, la optimización y lógica se basa en la propia experiencia del estudiante creador_
 
 ### Dinámica:
 
