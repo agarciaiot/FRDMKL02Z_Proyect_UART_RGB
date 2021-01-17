@@ -9,6 +9,7 @@
 # Exclude: Debug and Release temporal folders
 /MKL02Z32VFM4_UART0_GPIOB/Debug/
 /MKL02Z32VFM4_UART0_GPIOB/Release/
+/MKL02Z32VFM4_UART0_GPIOB/doc/
 
 # Exclude: doxygen html folder
 /MKL02Z32VFM4_UART0_GPIOB/doxygen/html/
