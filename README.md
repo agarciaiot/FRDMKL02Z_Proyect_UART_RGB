@@ -80,6 +80,6 @@ _Se ejecutaron pruebas de envío/recepción de datos sobre los terminales Serial
 
 ## Licencia:
 
-Este proyecto está bajo la Licencia gratuita (MIT License) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia gratuita (MIT License) - mira el archivo [LICENSE.md](https://github.com/agarciaiot/FRDMKL02Z_Proyect_UART_RGB/blob/main/LICENSE) para detalles
 
 Desarrollado por [agarciaiot](https://github.com/agarciaiot) para el Diplomado de IoT (Internet of Things, en Español: _**Internet de las Cosas**_) del Programa de [Ingeniería Electrónica en la Universidad del Magdalena](https://www.unimagdalena.edu.co/presentacionPrograma/Programa/1005).
